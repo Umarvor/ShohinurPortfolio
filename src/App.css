@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Container{
+    max-width: 1540px;
+    margin: auto;
+
+  
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(
+      135deg, /* Chiziqlar burchagi */
+      #3a0eff, /* Birinchi rang */
+      #8e3c85, /* Ikkinchi rang */
+      #ff7e5f, /* Birinchi rang */
+      #feb47b 25%, /* Ikkinchi rangning tugashi */
+      #0687b9 50%, /* Birinchi rangning tugashi */
+      #ffffff 55% /* Ikkinchi rangning tugashi */
+    );
+    background-size: 200% 200%; /* Gradientning o'lchamini sozlash */
+    animation: gradient 4s ease infinite; /* Gradient animatsiyasi */
+  }
+  
+  /* @keyframes gradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  } */
+  

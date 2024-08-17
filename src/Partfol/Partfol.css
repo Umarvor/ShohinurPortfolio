@@ -1,0 +1,58 @@
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+  }
+  
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolio-link {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .portfolio-image {
+    width: 100%;
+    height: 250px;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .portfolio-item:hover .portfolio-image {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .Partfol{
+    text-align: center;
+   color: rgb(0, 74, 171);
+  }

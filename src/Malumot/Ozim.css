@@ -1,0 +1,39 @@
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .profile-info {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .profile-info h1 {
+    font-size: 2rem;
+    color: #e70202;
+    cursor: pointer;
+  }
+  
+  .profile-info p {
+    font-size: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .profile-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
