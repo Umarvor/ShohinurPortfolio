@@ -33,6 +33,7 @@ function Navbar() {
                 <img className='Logo' src={Logo} alt="Logo" />
 
                 <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                    
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>
@@ -55,23 +56,29 @@ function Navbar() {
             </nav>
 
             <div className={`sidebar ${menuOpen ? 'open' : ''}`}>
+            <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                    
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                </div>
                 <ul className="sidebar-list">
-                    <li className="sidebar-item">
-                        <a onClick={handleScrollToPortfoliooo} className="sidebar-link">O'zim haqimda</a>
+                    <li id='nav-item'  className="sidebar-item">
+                        <a onClick={handleScrollToPortfoliooo} id='nav-link' className="sidebar-link">O'zim haqimda</a>
                     </li>
-                    <li className="sidebar-item">
-                        <a href='#' className="sidebar-link">Yutuqlarim</a>
+                    <li id='nav-item' className="sidebar-item">
+                        <a href='#' id='nav-link' className="sidebar-link">Yutuqlarim</a>
                     </li>
-                    <li className="sidebar-item">
-                        <a onClick={handleScrollToPortfolio} className="sidebar-link">Portfolio</a>
+                    <li id='nav-item' className="sidebar-item">
+                        <a onClick={handleScrollToPortfolio} id='nav-link' className="sidebar-link">Portfolio</a>
                     </li>
-                    <li className="sidebar-item">
-                        <a onClick={handleScrollToPortfolioo} className="sidebar-link">IT sohasidagi o'zgarishlar</a>
+                    <li id='nav-item' className="sidebar-item">
+                        <a onClick={handleScrollToPortfolioo} id='nav-link' className="sidebar-link">IT sohasidagi o'zgarishlar</a>
                     </li>
                 </ul>
             </div>
 
-            <div className={`overlay ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}></div>
+          
         </div>
     );
 }
