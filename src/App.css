@@ -8,9 +8,9 @@
 
   
 }
-body {
-    margin: 0;
-    height: 100vh;
+.Container {
+   
+
     background: linear-gradient(
       135deg, /* Chiziqlar burchagi */
       #3a0eff, /* Birinchi rang */

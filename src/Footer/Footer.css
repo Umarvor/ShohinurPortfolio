@@ -89,4 +89,7 @@
   }
   
   /* Media query for screens up to 300px wide */
-  
+  .Logoo{
+    width: 150px;
+    height: 110px;
+  }

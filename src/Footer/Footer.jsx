@@ -12,7 +12,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-logo">
-                    <img  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}  className='Logo' src={Logo} alt="" />
+                    <img  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}  className='Logoo' src={Logo} alt="" />
                     <br />
                     <br />
                     <article>
@@ -35,7 +35,7 @@ export default function Footer() {
 
 
                     </article>
-                    <p className='footer-copyright'>© 2024 Varganzaliklar. Barcha huquqlar himoyalangan.</p>
+                    <p className='footer-copyright'>© 2024 ShohinurPortfolio. Barcha huquqlar himoyalangan.</p>
                 </div>
                 <div className="footer-contact">
                     <br />

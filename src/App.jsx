@@ -4,6 +4,7 @@ import Partfol from './Partfol/Partfol'
 import It from './It/It'
 import '../src/App.css'
 import Footer from './Footer/Footer'
+import Top from './Navbar/Top'
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
         <Partfol/>
         <It/>
         <Footer/>
+        <Top/>
       </div>
     </>
   )

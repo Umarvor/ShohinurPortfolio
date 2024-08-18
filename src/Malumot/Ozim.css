@@ -1,39 +1,124 @@
 .profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .profile-info {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  .profile-info h1 {
-    font-size: 2rem;
-    color: #e70202;
-    cursor: pointer;
-  }
-  
-  .profile-info p {
-    font-size: 1.5rem;
-    color: #000000;
-    cursor: pointer;
-  }
-  
-  .profile-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .profile-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.profile-info h1 {
+  font-size: 2rem;
+  color: #e70202;
+  cursor: pointer;
+}
+
+.profile-info p {
+  font-size: 1.5rem;
+  color: #000000;
+  cursor: pointer;
+}
+
+.profile-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+
+/* 1200px va undan katta ekranlar uchun */
+@media (min-width: 1200px) {
+.profile-info h1 {
+  font-size: 2.5rem;
+}
+
+.profile-info p {
+  font-size: 1.75rem;
+}
+}
+
+/* 768px va 1199px orasidagi ekranlar uchun */
+@media (max-width: 1199px) and (min-width: 768px) {
+.profile-container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-info {
+  padding-right: 0;
+  margin-bottom: 20px;
+}
+
+.profile-info h1 {
+  font-size: 2.2rem;
+}
+
+.profile-info p {
+  font-size: 1.6rem;
+}
+
+.profile-image {
+  justify-content: center;
+}
+}
+
+/* 767px va undan kichik ekranlar uchun */
+@media (max-width: 767px) {
+.profile-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile-info {
+  padding-right: 0;
+  margin-bottom: 20px;
+}
+
+.profile-info h1 {
+  font-size: 1.8rem;
+}
+
+.profile-info p {
+  font-size: 1.4rem;
+}
+
+.profile-image {
+  justify-content: center;
+}
+
+.profile-image img {
+  width: 400px;
+  height: 300px;
+}
+}
+
+/* 480px va undan kichik ekranlar uchun */
+@media (max-width: 480px) {
+.profile-info h1 {
+  font-size: 1.5rem;
+}
+
+.profile-info p {
+  font-size: 1.2rem;
+}
+
+.profile-image img {
+  width: 250px;
+  height: 220px;
+}
+}

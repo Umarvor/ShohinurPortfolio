@@ -1,54 +1,222 @@
 .navbar {
-    background-color: #2f5cff;
-    padding: 10px 20px;
-    height: 20px;
-  }
-  
+  background-color: #2f5cff;
+  padding: 10px 20px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Logo {
+  width: 150px;
+  height: 90px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-item {
+  position: relative; 
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding-bottom: 5px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #ffffff;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(0%); 
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 50%;
+  background-color: #2f5cff;
+  z-index: 1001;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-item {
+  margin: 20px 0;
+}
+
+.sidebar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 1330px) {
   .nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+      display: none;
   }
-  
-  .nav-item {
-    position: relative; 
-    margin: 0 10px;
+
+  .hamburger {
+      display: block;
   }
-  
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding-bottom: 5px;
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.back-to-top button {
+  background-color: #007bffc7;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-to-top button:hover {
+  background-color: #0056b3;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 991001;
+  /* loader yuqori qatlamda bo'lishi kerak */
+}
+
+.loader {
+  width: 100px;
+  aspect-ratio: 1;
+  display: grid;
+  -webkit-mask: conic-gradient(from 15deg, #0000, #000);
+  animation: l26 1s infinite steps(12);
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background:
+      radial-gradient(closest-side at 50% 12.5%,
+          #33a4f0 96%, #0000) 50% 0/20% 80% repeat-y,
+      radial-gradient(closest-side at 12.5% 50%,
+          #33f0d0 96%, #0000) 0 50%/80% 20% repeat-x;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  transform: rotate(30deg);
+}
+
+.loader:after {
+  transform: rotate(60deg);
+}
+
+@keyframes l26 {
+  100% {
+      transform: rotate(1turn)
   }
-  
-  .nav-link::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px; 
-    background-color: #ffffff;
-    transition: width 0.3s ease, left 0.3s ease;
-    transform: translateX(0%); 
-  }
-  
-  .nav-link:hover::after {
-    width: 100%;
-    left: 0;
-  }
-  .Logo{
-    width: 150px;
-    cursor: pointer;
-    height: 120px;
-  
-    
-    
-  }
- 
+}
+
