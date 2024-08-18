@@ -3,6 +3,7 @@ import Malumot from '../src/Malumot/Ozim'
 import Partfol from './Partfol/Partfol'
 import It from './It/It'
 import '../src/App.css'
+import Footer from './Footer/Footer'
 function App() {
 
   return (
@@ -12,6 +13,7 @@ function App() {
         <Malumot/>
         <Partfol/>
         <It/>
+        <Footer/>
       </div>
     </>
   )

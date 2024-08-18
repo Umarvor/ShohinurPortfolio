@@ -32,7 +32,7 @@ const updates = [
 
 function ITUpdates() {
   return (
-    <div className="updates-container">
+    <div id='portfolio-sectionn' className="updates-container">
       {updates.map((update, index) => (
         <div key={index} className="update-item">
           

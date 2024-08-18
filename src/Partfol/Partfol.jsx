@@ -2,16 +2,17 @@ import React from 'react';
 import './Partfol.css';
 import Vrg from '../img/Снимок экрана 2024-08-17 184607.png'
 function Portfolio() {
+   
     return (
-        <div>
+        <div id='portfolio-section'>
             <h1 className='Partfol'>Portfoliyam</h1>
             <div className="portfolio-container">
 
                 <div className="portfolio-item">
                     <a href="https://Varganzaliklar.netlify.app" target="_blank" rel="noopener noreferrer" className="portfolio-link">
-                        <img src={Vrg} alt="Project 1" className="portfolio-image" />
+                           <img src={Vrg} alt="Project 1" className="portfolio-image" />
                         <div className="overlay">
-                            <div className="text">Ustiga bosing!</div>
+                            <div className="text">Varganzaliklar!</div>
                         </div>
                     </a>
                 </div>

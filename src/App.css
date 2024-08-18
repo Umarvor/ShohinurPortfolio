@@ -24,12 +24,12 @@ body {
     animation: gradient 4s ease infinite; /* Gradient animatsiyasi */
   }
   
-  /* @keyframes gradient {
+   @keyframes gradient {
     0% {
       background-position: 0% 0%;
     }
     100% {
       background-position: 100% 100%;
     }
-  } */
+  } 
   

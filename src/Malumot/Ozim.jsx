@@ -3,7 +3,7 @@ import './Ozim.css'; // CSS faylni import qilish
 import Logo from '../img/image.png'
 function Profile() {
   return (
-    <div className="profile-container">
+    <div id='portfolio-sectionnn' className="profile-container">
       <div className="profile-info">
         <h1>O'zim haqimda!</h1>
         <p>
