@@ -24,6 +24,8 @@ export default function Footer() {
                             }}>
                                 O'zim haqimda
                             </li>
+                            <li onClick={() => window.scrollTo({ top: 800, behavior: 'smooth' })}>Foydali manbalar</li>
+
                             <li onClick={() => window.scrollTo({ top: 400, behavior: 'smooth' })}>Portfolio</li>
                             <li onClick={() => window.scrollTo({ top: 800, behavior: 'smooth' })}>IT sohasidagio'zgarishlar</li>
 

@@ -4,6 +4,7 @@ import Logo from '../img/image.png'
 function Profile() {
   return (
     <div id='portfolio-sectionnn' className="profile-container">
+      <br />
       <div className="profile-info">
         <h1>O'zim haqimda!</h1>
         <p>

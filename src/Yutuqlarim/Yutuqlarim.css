@@ -1,0 +1,60 @@
+.accordion-container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .accordion-item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .accordion-title {
+    padding: 15px;
+    background-color: #007BFF; /* Bu yerda o'zingizning rangni tanlashingiz mumkin */
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .qs{
+    color: #0056b3;
+    cursor: pointer;
+  }
+  .accordion-title:hover {
+    background-color: #0056b3; /* Hover paytida rang o'zgarishi */
+  }
+  
+  .accordion-content {
+    padding: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .accordion-content p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  .accordion-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Rasm bilan matn orasidagi masofa */
+    border-radius: 5px; /* Burchaklarining radiusi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Rasmga biroz soyali ko'rinish qo'shish */
+  }
+  
+  /* Agar accordion ichida havola (link) bo'lsa, uni stilini qo'shishingiz mumkin */
+  .accordion-content a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .accordion-content a:hover {
+    text-decoration: underline;
+  }
+  

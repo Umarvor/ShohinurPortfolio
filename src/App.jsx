@@ -5,6 +5,7 @@ import It from './It/It'
 import '../src/App.css'
 import Footer from './Footer/Footer'
 import Top from './Navbar/Top'
+import Yutuqlarim from './Yutuqlarim/Yutuqlarim'
 function App() {
 
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Malumot/>
         <Partfol/>
+        <Yutuqlarim/>
         <It/>
         <Footer/>
         <Top/>

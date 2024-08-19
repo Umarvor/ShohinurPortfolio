@@ -22,7 +22,11 @@ function Navbar() {
         portfolioSection.scrollIntoView({ behavior: 'smooth' });
         setMenuOpen(false); // Close the sidebar when a link is clicked
     }
-
+    const handleScrollToPortfolioooo = () => {
+        const portfolioSection = document.getElementById('portfolio-sectionnnn');
+        portfolioSection.scrollIntoView({ behavior: 'smooth' });
+        setMenuOpen(false); // Close the sidebar when a link is clicked
+    }
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     }
@@ -44,7 +48,7 @@ function Navbar() {
                         <a onClick={handleScrollToPortfoliooo} className="nav-link">O'zim haqimda</a>
                     </li>
                     <li className="nav-item">
-                        <a href='#' className="nav-link">Yutuqlarim</a>
+                        <a onClick={handleScrollToPortfolioooo} href='#' className="nav-link">Foydali manbalar</a>
                     </li>
                     <li className="nav-item">
                         <a onClick={handleScrollToPortfolio} className="nav-link">Portfolio</a>
@@ -67,7 +71,7 @@ function Navbar() {
                         <a onClick={handleScrollToPortfoliooo} id='nav-link' className="sidebar-link">O'zim haqimda</a>
                     </li>
                     <li id='nav-item' className="sidebar-item">
-                        <a href='#' id='nav-link' className="sidebar-link">Yutuqlarim</a>
+                        <a href='#' id='nav-link' className="sidebar-link">Foydali manbalar</a>
                     </li>
                     <li id='nav-item' className="sidebar-item">
                         <a onClick={handleScrollToPortfolio} id='nav-link' className="sidebar-link">Portfolio</a>
