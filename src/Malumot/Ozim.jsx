@@ -8,9 +8,7 @@ function Profile() {
       <div className="profile-info">
         <h1>O'zim haqimda!</h1>
         <p>
-          Salom mening ismim Shahriyorov Shohinur, 26-12-2008 yilda Qashqadaryo viloyati kitob tumani Varganza MFYga  tug'ilganman bolaligimdan dasturlashga qiziqishim sababli 2023-yil yoz oyida IQtidor IT Akademiyasiga keldim va u yerda 1-yil Front-end kursiga o'qib va muvafaqqiyatli tomomlab hozirda o'zim rivojlanishim uchun bir nechta saytlarni yozganman. Men veb-texnologiyalar bilan ishlashni yaxshi ko'raman
-          va yangi loyihalarni amalga oshirishga intilaman . Yana qiziqarli loyiha va
-          tajribalar uchun doimo izlanishda bo'laman.
+          Salom mening ismim Shohinur familyam Shahriyorov 26-dekabr 2008-yilda tug'ulganman. Yashash manzilim Qashqadaryo viloyati kitob tumani Varganza MFY. Hozirda tumandagi 96-maktabning metematika-fizika fanlarini chuqurlashtirib o'tadigan sinfga o'qiyman. Yoshligimdan dasturlash va kiberxafsizkikka qiziqqanim sababli  IT yo'nalishida  o'qimoqchiman. O'tgan 2023 yil yoz oyida kitob tumandagi IQTIDOR IT maktabigqa front-end kursiga o'qishga bordim va u yerni muvofiqiyatli tamomlab "Junior dasturchi sertifikatiga ega bo'dim" hozida ber nechta saytlar dasturchisiman.Kelajakdagi maqsadim Ozbekiston respublikasini rivojlanishiga hissa qo'shish va yetuk "Shoh Group " IT kompaniyasiga asos solish!
         </p>
       </div>
       <div className="profile-image">
